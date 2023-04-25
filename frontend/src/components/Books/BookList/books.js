@@ -40,7 +40,7 @@ class Books extends React.Component{
                     <div className="col mb-3">
                         <div className="row">
                             <div className="col-sm-12 col-md-12">
-                                <Link className={"btn btn-block btn-success"} to={"/books/add"}>Add new book</Link>
+                                <Link className={"btn btn-block btn-primary"} to={"/books/add"}>Add new book</Link>
                             </div>
                         </div>
                     </div>

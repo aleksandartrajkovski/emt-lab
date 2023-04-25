@@ -5,10 +5,10 @@ const Categories = (props) => {
         <div className="container my-4">
             <div className="row">
                 <div className="col">
-                    <h2>Categories</h2>
+                    <h4>Categories</h4>
                 </div>
             </div>
-            <div className="row">
+            <div className="row justify-content-around align-content-center">
                 <div className="col">
                     <table className="table table-striped">
                         <thead>

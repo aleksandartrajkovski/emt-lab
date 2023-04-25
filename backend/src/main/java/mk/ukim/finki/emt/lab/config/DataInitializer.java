@@ -37,10 +37,10 @@ public class DataInitializer {
     @PostConstruct
     public void init(){
         Country country1 = new Country("Macedonia", "Europe");
-        Country country2 = new Country("Serbia", "Europe");
-        Country country3 = new Country("Austria", "Europe");
-        Country country4 = new Country("Bulgaria", "Europe");
-        Country country5 = new Country("Mexico", "South America");
+        Country country2 = new Country("USA", "North America");
+        Country country3 = new Country("Canada", "North America");
+        Country country4 = new Country("Switzerland", "Europe");
+        Country country5 = new Country("Germany", "Europe");
 
         this.countryRepository.save(country1);
         this.countryRepository.save(country2);
@@ -48,11 +48,11 @@ public class DataInitializer {
         this.countryRepository.save(country4);
         this.countryRepository.save(country5);
 
-        Author author1 = new Author("Author1", "Author1", country1);
-        Author author2 = new Author("Author2", "Author2", country1);
-        Author author3 = new Author("Author3", "Author3", country2);
-        Author author4 = new Author("Author4", "Author4", country3);
-        Author author5 = new Author("Author5", "Author5", country5);
+        Author author1 = new Author("Aleksandar", "Trajkovski", country1);
+        Author author2 = new Author("Avtor", "Avtor", country1);
+        Author author3 = new Author("AvtorName1", "AvtorName2", country2);
+        Author author4 = new Author("Koco", "Racin", country3);
+        Author author5 = new Author("Lav", "Tolstoj", country5);
 
         this.authorRepository.save(author1);
         this.authorRepository.save(author2);
@@ -60,12 +60,12 @@ public class DataInitializer {
         this.authorRepository.save(author4);
         this.authorRepository.save(author5);
 
-        Book book1 = new Book("Book1", Category.NOVEL, author3, 2);
-        Book book2 = new Book("Book2", Category.NOVEL, author4, 33);
-        Book book3 = new Book("Book3", Category.NOVEL, author1, 10);
-        Book book4 = new Book("Book4", Category.DRAMA, author2, 40);
-        Book book5 = new Book("Book5", Category.NOVEL, author3, 20);
-        Book book6 = new Book("Book6", Category.DRAMA, author5, 60);
+        Book book1 = new Book("Kniga1", Category.NOVEL, author3, 10);
+        Book book2 = new Book("Kniga2", Category.FANTASY, author4, 20);
+        Book book3 = new Book("Kniga3", Category.DRAMA, author1, 30);
+        Book book4 = new Book("Kniga4", Category.THRILER, author2, 40);
+        Book book5 = new Book("Kniga5", Category.BIOGRAPHY, author3, 50);
+        Book book6 = new Book("Kniga6", Category.DRAMA, author5, 60);
 
 
         this.bookRepository.save(book1);

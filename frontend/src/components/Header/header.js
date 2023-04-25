@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const Header = (props) => {
     return (
         <header>
-            <nav className="navbar navbar-expand-md navbar-dark text-bg-success">
-                <Link className="navbar-brand" to="/books">
-                    E-Library Application
+            <nav className="navbar navbar-expand-md navbar-dark text-bg-danger">
+                <Link className="navbar-brand ml-auto p-3" to="/books">
+                    E-Library
                 </Link>
                 <button
                     className="navbar-toggler"

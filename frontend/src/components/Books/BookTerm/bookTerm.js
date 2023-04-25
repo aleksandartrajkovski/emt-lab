@@ -12,10 +12,10 @@ const BookTerm = (props) => {
                 <a title="Delete" className="btn btn-danger m-2" onClick={() => props.onDelete(props.term.id)}>
                     Delete
                 </a>
-                <Link className="btn btn-info m-2" onClick={() => props.onEdit(props.term.id)} to={`/books/edit/${props.term.id}`}>
+                <Link className="btn btn-outline-primary m-2" onClick={() => props.onEdit(props.term.id)} to={`/books/edit/${props.term.id}`}>
                     Edit
                 </Link>
-                <Link className="btn btn-success m-2" onClick={() => props.onMarkAsTaken(props.term.id)} to="/books">
+                <Link className="btn btn-outline-success m-2" onClick={() => props.onMarkAsTaken(props.term.id)} to="/books">
                     Mark as taken
                 </Link>
             </td>

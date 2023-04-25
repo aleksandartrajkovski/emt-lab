@@ -4,6 +4,7 @@ const authors = (props) => {
     return(
         <div className={"container mm-4 mt-5"}>
             <div className={"row"}>
+                <h4>Authors</h4>
                 <div className={"table-responsive"}>
                     <table className={"table table-striped"}>
                         <thead>
